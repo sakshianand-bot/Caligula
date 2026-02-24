@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+/* Performance Optimizations */
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Content visibility for below-fold sections - browser skips rendering until visible */
+.content-visibility-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 500px;
+}
+
+/* GPU acceleration for animated elements */
+.gpu-accelerated {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Optimize paint for fixed elements */
+.fixed {
+  will-change: transform;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Font display optimization */
+@font-face {
+  font-display: swap;
+}
+
+/* Prevent layout shift for images */
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* Contain layout for complex sections */
+section {
+  contain: layout style;
+}

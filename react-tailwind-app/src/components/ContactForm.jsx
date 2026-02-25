@@ -47,7 +47,7 @@ const ContactForm = memo(function ContactForm() {
             <span className="text-sm font-medium text-slate-300 tracking-wide uppercase">Contact Us</span>
             <h2 className="text-4xl md:text-5xl font-light mt-4 mb-8 leading-tight">
               Get in<br />
-              <span className="font-semibold">Touch Today</span>
+              <span className="font-semibold text-white">Touch Today</span>
             </h2>
             <p className="text-lg text-slate-300 mb-12 leading-relaxed">
               Have questions or need to schedule service? Reach out to our team and we'll respond promptly.
@@ -55,7 +55,8 @@ const ContactForm = memo(function ContactForm() {
             
             <div className="space-y-8">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center flex-shrink-0 border border-white/20">
+                {/* Changed rounded-lg to rounded-none */}
+                <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-none flex items-center justify-center flex-shrink-0 border border-white/20">
                   <Phone className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -66,7 +67,7 @@ const ContactForm = memo(function ContactForm() {
               </div>
               
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center flex-shrink-0 border border-white/20">
+                <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-none flex items-center justify-center flex-shrink-0 border border-white/20">
                   <Mail className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -77,7 +78,7 @@ const ContactForm = memo(function ContactForm() {
               </div>
               
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center flex-shrink-0 border border-white/20">
+                <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-none flex items-center justify-center flex-shrink-0 border border-white/20">
                   <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -88,7 +89,7 @@ const ContactForm = memo(function ContactForm() {
               </div>
               
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center flex-shrink-0 border border-white/20">
+                <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-none flex items-center justify-center flex-shrink-0 border border-white/20">
                   <Clock className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -103,15 +104,17 @@ const ContactForm = memo(function ContactForm() {
           
           {/* Right - Contact Form - Light */}
           <div>
-            <div className="bg-white p-8 rounded-2xl shadow-2xl">
-              <h3 className="text-2xl font-semibold text-slate-900 mb-6">Send Us a Message</h3>
+            {/* Changed rounded-2xl to rounded-none */}
+            <div className="bg-white p-8 rounded-none shadow-2xl">
+              <h3 className="text-2xl font-semibold text-slate-900 mb-6 uppercase tracking-tight">Send Us a Message</h3>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-2">
+                    <label htmlFor="name" className="block text-xs font-bold text-slate-900 uppercase mb-2">
                       Name *
                     </label>
+                    {/* Changed rounded-lg to rounded-none */}
                     <input
                       type="text"
                       id="name"
@@ -119,13 +122,13 @@ const ContactForm = memo(function ContactForm() {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent transition-all"
+                      className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-none focus:outline-none focus:ring-1 focus:ring-slate-900 focus:border-slate-900 transition-all"
                       placeholder="Your full name"
                     />
                   </div>
                   
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-2">
+                    <label htmlFor="email" className="block text-xs font-bold text-slate-900 uppercase mb-2">
                       Email *
                     </label>
                     <input
@@ -135,14 +138,14 @@ const ContactForm = memo(function ContactForm() {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent transition-all"
+                      className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-none focus:outline-none focus:ring-1 focus:ring-slate-900 focus:border-slate-900 transition-all"
                       placeholder="your@email.com"
                     />
                   </div>
                 </div>
                 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-slate-700 mb-2">
+                  <label htmlFor="phone" className="block text-xs font-bold text-slate-900 uppercase mb-2">
                     Phone Number *
                   </label>
                   <input
@@ -152,13 +155,13 @@ const ContactForm = memo(function ContactForm() {
                     value={formData.phone}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-none focus:outline-none focus:ring-1 focus:ring-slate-900 focus:border-slate-900 transition-all"
                     placeholder="(123) 456-7890"
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="service" className="block text-sm font-medium text-slate-700 mb-2">
+                  <label htmlFor="service" className="block text-xs font-bold text-slate-900 uppercase mb-2">
                     Service Needed
                   </label>
                   <select
@@ -166,7 +169,7 @@ const ContactForm = memo(function ContactForm() {
                     name="service"
                     value={formData.service}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-none focus:outline-none focus:ring-1 focus:ring-slate-900 focus:border-slate-900 transition-all appearance-none"
                   >
                     <option value="">Select a service</option>
                     <option value="basic-drain">Basic Drain Cleaning</option>
@@ -178,7 +181,7 @@ const ContactForm = memo(function ContactForm() {
                 </div>
                 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-2">
+                  <label htmlFor="message" className="block text-xs font-bold text-slate-900 uppercase mb-2">
                     Message *
                   </label>
                   <textarea
@@ -188,19 +191,20 @@ const ContactForm = memo(function ContactForm() {
                     onChange={handleInputChange}
                     required
                     rows={4}
-                    className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent transition-all resize-none"
+                    className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-none focus:outline-none focus:ring-1 focus:ring-slate-900 focus:border-slate-900 transition-all resize-none"
                     placeholder="Describe your issue or service needs..."
                   />
                 </div>
                 
+                {/* Changed rounded-lg to rounded-none and removed gradient for a "solid" block look */}
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-slate-900 to-slate-800 text-white py-4 px-6 rounded-lg font-medium hover:from-slate-800 hover:to-slate-700 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3 shadow-lg"
+                  className="w-full bg-slate-900 text-white py-4 px-6 rounded-none font-bold uppercase tracking-widest hover:bg-slate-800 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3"
                 >
                   {isSubmitting ? (
                     <>
-                      <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                      <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-none animate-spin" />
                       Sending...
                     </>
                   ) : (
@@ -211,10 +215,6 @@ const ContactForm = memo(function ContactForm() {
                   )}
                 </button>
               </form>
-              
-              <p className="text-sm text-slate-500 mt-6 text-center">
-                We'll respond within 24 hours. For emergencies, call us directly.
-              </p>
             </div>
           </div>
         </div>

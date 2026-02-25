@@ -18,6 +18,7 @@ const Navigation = memo(function Navigation() {
             <a href="#services" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Services</a>
             <a href="#about" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">About</a>
             <a href="#testimonials" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Reviews</a>
+            <a href="#contact-form" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Contact Us</a>
             <a href="#contact" className="bg-slate-900 text-white px-6 py-3 text-sm font-medium hover:bg-slate-800 transition-colors">
               Get Quote
             </a>
@@ -39,6 +40,7 @@ const Navigation = memo(function Navigation() {
             <a href="#services" onClick={() => setIsMenuOpen(false)} className="block py-2 text-slate-600 hover:text-slate-900 font-medium">Services</a>
             <a href="#about" onClick={() => setIsMenuOpen(false)} className="block py-2 text-slate-600 hover:text-slate-900 font-medium">About</a>
             <a href="#testimonials" onClick={() => setIsMenuOpen(false)} className="block py-2 text-slate-600 hover:text-slate-900 font-medium">Reviews</a>
+            <a href="#contact-form" onClick={() => setIsMenuOpen(false)} className="block py-2 text-slate-600 hover:text-slate-900 font-medium">Contact Us</a>
             <a href="#contact" onClick={() => setIsMenuOpen(false)} className="block w-full text-center bg-slate-900 text-white px-6 py-3 font-medium">Get Quote</a>
           </div>
         </div>

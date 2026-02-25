@@ -10,6 +10,7 @@ const Services = lazy(() => import('./components/Services'))
 const About = lazy(() => import('./components/About'))
 const Guarantee = lazy(() => import('./components/Guarantee'))
 const Testimonials = lazy(() => import('./components/Testimonials'))
+const ContactForm = lazy(() => import('./components/ContactForm'))
 const ContactCTA = lazy(() => import('./components/ContactCTA'))
 const Footer = lazy(() => import('./components/Footer'))
 const FloatingCTA = lazy(() => import('./components/FloatingCTA'))
@@ -32,6 +33,7 @@ function App() {
         <About />
         <Guarantee />
         <Testimonials />
+        <ContactForm />
         <ContactCTA />
         <Footer />
         <FloatingCTA />

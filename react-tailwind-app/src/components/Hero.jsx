@@ -47,16 +47,16 @@ const Hero = memo(function Hero() {
             {/* Stats */}
             <div className="flex items-center gap-12 mt-12 pt-12 border-t border-slate-200">
               <div>
-                <p className="text-3xl font-semibold text-slate-900">15+</p>
-                <p className="text-sm text-slate-500 mt-1">Years Experience</p>
-              </div>
-              <div>
-                <p className="text-3xl font-semibold text-slate-900">500+</p>
-                <p className="text-sm text-slate-500 mt-1">Happy Clients</p>
-              </div>
-              <div>
                 <p className="text-3xl font-semibold text-slate-900">24/7</p>
                 <p className="text-sm text-slate-500 mt-1">Emergency Service</p>
+              </div>
+              <div>
+                <p className="text-3xl font-semibold text-slate-900">100%</p>
+                <p className="text-sm text-slate-500 mt-1">Satisfaction</p>
+              </div>
+              <div>
+                <p className="text-3xl font-semibold text-slate-900">Licensed</p>
+                <p className="text-sm text-slate-500 mt-1">& Insured</p>
               </div>
             </div>
           </div>
@@ -66,19 +66,13 @@ const Hero = memo(function Hero() {
             <div className="absolute -inset-4 bg-slate-100 -z-10" />
             
             <div className="bg-white shadow-2xl">
-              {/* Image placeholder */}
-              <div className="aspect-[4/3] bg-slate-200 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-slate-300 to-slate-400" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4">
-                      <svg className="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                      </svg>
-                    </div>
-                    <p className="text-white font-medium">Complete Home Service</p>
-                  </div>
-                </div>
+              {/* Image */}
+              <div className="relative overflow-hidden">
+                <img 
+                  src="/Countertop For kitchen_ Buy, Build & Installing Ideas.webp" 
+                  alt="Kitchen countertop installation and design ideas"
+                  className="w-full h-auto"
+                />
                 <div className="absolute top-4 left-4 bg-white px-3 py-1 text-xs font-semibold tracking-wide uppercase">
                   Special Offer
                 </div>
@@ -96,7 +90,7 @@ const Hero = memo(function Hero() {
                   </div>
                 </div>
                 
-                <div className="flex items-center gap-6 text-sm text-slate-500 mb-6 py-4 border-y border-slate-100">
+                <div className="flex items-center gap-6 text-sm text-slate-500 mb-6 mt-8 py-4 border-y border-slate-100">
                   <span className="flex items-center gap-2">
                     <Clock className="w-4 h-4" />
                     Same-day service

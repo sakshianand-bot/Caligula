@@ -9,7 +9,7 @@ const Services = memo(function Services() {
       price: "$97.77",
       description: "Single drain clearing with camera inspection available. Perfect for isolated clogs.",
       features: ["Single drain service", "Camera inspection", "Same-day scheduling"],
-      image: "bg-slate-200"
+      image: "/DIY Air Conditioner Maintenance - Handyman tips.webp"
     },
     {
       icon: <Home className="w-8 h-8" />,
@@ -18,7 +18,7 @@ const Services = memo(function Services() {
       description: "Up to 4 openings - sink, tub, toilet, and shower basic cleaning.",
       features: ["4 drain openings", "Whole house coverage", "Priority scheduling"],
       featured: true,
-      image: "bg-slate-300"
+      image: "/Gaithersburg Emergency Maid Help.webp"
     },
     {
       icon: <Wrench className="w-8 h-8" />,
@@ -28,7 +28,7 @@ const Services = memo(function Services() {
       priceSecondary: "$377.77",
       description: "Severe blockages and main line hydro jetting with root removal.",
       features: ["Hydro jetting", "Root removal", "Permanent solutions"],
-      image: "bg-slate-400"
+      image: "/download (4).webp"
     }
   ]
 
@@ -52,13 +52,23 @@ const Services = memo(function Services() {
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service, i) => (
             <div key={i} className="group">
-              {/* Image placeholder */}
-              <div className={`${service.image} aspect-[4/3] relative overflow-hidden mb-6`}>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center text-white">
-                    {service.icon}
+              {/* Image */}
+              <div className="relative overflow-hidden mb-6 bg-slate-100">
+                {service.image.startsWith('/') ? (
+                  <img 
+                    src={service.image} 
+                    alt={service.title}
+                    className="w-full aspect-[4/3] object-cover"
+                  />
+                ) : (
+                  <div className={`${service.image} aspect-[4/3]`}>
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="w-16 h-16 bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center text-white">
+                        {service.icon}
+                      </div>
+                    </div>
                   </div>
-                </div>
+                )}
                 {service.featured && (
                   <div className="absolute top-4 left-4 bg-white px-3 py-1 text-xs font-semibold tracking-wide uppercase">
                     Popular

@@ -28,8 +28,8 @@ const About = memo(function About() {
                   <Award className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <p className="text-2xl font-semibold text-slate-900">15+</p>
-                  <p className="text-sm text-slate-500">Years Experience</p>
+                  <p className="text-2xl font-semibold text-slate-900">24/7</p>
+                  <p className="text-sm text-slate-500">Emergency Service</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -37,8 +37,8 @@ const About = memo(function About() {
                   <Users className="w-6 h-6 text-slate-900" />
                 </div>
                 <div>
-                  <p className="text-2xl font-semibold text-slate-900">500+</p>
-                  <p className="text-sm text-slate-500">Happy Clients</p>
+                  <p className="text-2xl font-semibold text-slate-900">100%</p>
+                  <p className="text-sm text-slate-500">Satisfaction</p>
                 </div>
               </div>
             </div>

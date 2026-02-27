@@ -16,7 +16,7 @@ const UrgencySection = memo(function UrgencySection() {
           </h2>
           <p className="text-lg text-slate-600 mb-12 max-w-2xl mx-auto">
             A clogged drain today becomes a $5,000+ sewer repair tomorrow. 
-            Act now and get all your drains cleaned for just $177.77.
+            Act now and get up to four drains cleaned: sink, tub, toilet, and shower of your choice for only $177.77.
           </p>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-white p-6 text-center border border-slate-200">
@@ -28,7 +28,7 @@ const UrgencySection = memo(function UrgencySection() {
                 Best Value
               </div>
               <div className="text-3xl font-semibold mb-1">$177.77</div>
-              <div className="text-sm text-slate-400">Complete Home</div>
+              <div className="text-sm text-slate-400">4 Drains: Sink, Tub, Toilet & Shower</div>
             </div>
             <div className="bg-white p-6 text-center border border-slate-200">
               <div className="text-3xl font-semibold text-slate-900 mb-1">$377.77</div>

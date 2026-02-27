@@ -71,7 +71,7 @@ const Hero = memo(function Hero() {
                 <img 
                   src="/Countertop For kitchen_ Buy, Build & Installing Ideas.webp" 
                   alt="Kitchen countertop installation and design ideas"
-                  className="w-full h-auto"
+                  className="w-full h-auto object-contain"
                 />
                 <div className="absolute top-4 left-4 bg-white px-3 py-1 text-xs font-semibold tracking-wide uppercase">
                   Special Offer
@@ -82,7 +82,7 @@ const Hero = memo(function Hero() {
                 <div className="flex items-start justify-between mb-4">
                   <div>
                     <h3 className="text-xl font-semibold text-slate-900">Full Drain Cleaning</h3>
-                    <p className="text-slate-500 mt-1">Up to 4 drain openings</p>
+                    <p className="text-slate-500 mt-1">Sink, Tub, Toilet & Shower</p>
                   </div>
                   <div className="text-right">
                     <p className="text-3xl font-semibold text-slate-900">$177<span className="text-lg">.77</span></p>

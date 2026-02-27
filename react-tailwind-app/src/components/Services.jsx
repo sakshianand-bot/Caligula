@@ -7,18 +7,18 @@ const Services = memo(function Services() {
       icon: <Droplets className="w-8 h-8" />,
       title: "Basic Drain Cleaning",
       price: "$97.77",
-      description: "Single drain clearing with camera inspection available. Perfect for isolated clogs.",
-      features: ["Single drain service", "Camera inspection", "Same-day scheduling"],
+      description: "Single drain clearing. Perfect for isolated clogs.",
+      features: ["Single drain service", "Same-day scheduling"],
       image: "/DIY Air Conditioner Maintenance - Handyman tips.webp"
     },
     {
       icon: <Home className="w-8 h-8" />,
-      title: "Complete Home Service",
+      title: "Complete Service - 4 Drains: Sink, Tub, Toilet & Shower",
       price: "$177.77",
       description: "Up to 4 openings - sink, tub, toilet, and shower basic cleaning.",
-      features: ["4 drain openings", "Whole house coverage", "Priority scheduling"],
+      features: ["4 drain openings", "Priority scheduling"],
       featured: true,
-      image: "/Gaithersburg Emergency Maid Help.webp"
+      image: "/sewer-drain-cleaning-machine.webp"
     },
     {
       icon: <Wrench className="w-8 h-8" />,
@@ -26,8 +26,8 @@ const Services = memo(function Services() {
       price: "$99.95",
       priceNote: "Maintenance",
       priceSecondary: "$377.77",
-      description: "Severe blockages and main line hydro jetting with root removal.",
-      features: ["Hydro jetting", "Root removal", "Permanent solutions"],
+      description: "Severe blockages and main line service with root removal.",
+      features: ["Root removal"],
       image: "/download (4).webp"
     }
   ]
@@ -113,6 +113,12 @@ const Services = memo(function Services() {
               </div>
             </div>
           ))}
+        </div>
+        
+        <div className="mt-16 text-center">
+          <p className="text-sm text-slate-500">
+            Drain and Sewer Camera Inspections Available Upon Request for an Additional Fee.
+          </p>
         </div>
       </div>
     </section>

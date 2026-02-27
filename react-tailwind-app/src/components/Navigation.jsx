@@ -10,8 +10,8 @@ const Navigation = memo(function Navigation() {
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <h1 className="text-xl font-semibold text-slate-900 tracking-tight">Caligula's</h1>
-              <p className="text-xs text-slate-500 tracking-wide uppercase">Drain & Sewer</p>
+              <h1 className="text-xl font-semibold text-slate-900 tracking-tight">CALIGULAS LLC</h1>
+              <p className="text-xs text-slate-500 tracking-wide uppercase">WATER DAMAGE RESTORATION DRAIN & SEWER CLEANING</p>
             </div>
           </div>
           <div className="hidden md:flex items-center gap-10">

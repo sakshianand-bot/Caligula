@@ -7,10 +7,10 @@ const Footer = memo(function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-4 gap-12">
           <div className="md:col-span-1">
-            <h3 className="text-xl font-semibold text-white tracking-tight mb-2">Caligula's</h3>
-            <p className="text-xs text-slate-500 tracking-wide uppercase mb-6">Drain & Sewer</p>
+            <h3 className="text-xl font-semibold text-white tracking-tight mb-2">CALIGULAS LLC</h3>
+            <p className="text-xs text-slate-500 tracking-wide uppercase mb-6">WATER DAMAGE RESTORATION DRAIN & SEWER CLEANING</p>
             <p className="text-sm leading-relaxed">
-              Professional drain and sewer cleaning services. Licensed, insured, and 100% satisfaction guaranteed.
+              Professional water damage restoration, drain and sewer cleaning services. Licensed, insured, and 100% satisfaction guaranteed.
             </p>
           </div>
           
@@ -54,7 +54,7 @@ const Footer = memo(function Footer() {
         </div>
         
         <div className="border-t border-slate-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm">© 2024 Caligula's Drain Sewer Cleaning. All rights reserved.</p>
+          <p className="text-sm">© 2024 CALIGULAS LLC. All rights reserved.</p>
           <p className="text-sm text-slate-500">Licensed & Insured • 100% Satisfaction Guaranteed</p>
         </div>
       </div>

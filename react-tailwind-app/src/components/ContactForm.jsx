@@ -20,21 +20,41 @@ const ContactForm = memo(function ContactForm() {
     }))
   }
 
+  const [result, setResult] = useState("")
+
   const handleSubmit = async (e) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setResult("Sending...")
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000))
+    const formData = new FormData(e.target)
+    formData.append("access_key", import.meta.env.VITE_WEB3FORMS_ACCESS_KEY)
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      })
+
+      const data = await response.json()
+      
+      if (data.success) {
+        setResult("Form Submitted Successfully!")
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          service: '',
+          message: ''
+        })
+        e.target.reset()
+      } else {
+        setResult("Error submitting form. Please try again.")
+      }
+    } catch (error) {
+      setResult("Error submitting form. Please try again.")
+    }
     
-    alert('Thank you for your message! We will contact you soon.')
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      service: '',
-      message: ''
-    })
     setIsSubmitting(false)
   }
 
@@ -214,6 +234,14 @@ const ContactForm = memo(function ContactForm() {
                     </>
                   )}
                 </button>
+                
+                {result && (
+                  <p className={`text-center text-sm font-medium ${
+                    result.includes("Success") ? "text-green-600" : "text-red-600"
+                  }`}>
+                    {result}
+                  </p>
+                )}
               </form>
             </div>
           </div>

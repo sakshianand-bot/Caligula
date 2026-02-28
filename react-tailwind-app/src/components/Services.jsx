@@ -18,7 +18,7 @@ const Services = memo(function Services() {
       description: "Up to 4 openings - sink, tub, toilet, and shower basic cleaning.",
       features: ["4 drain openings", "Priority scheduling"],
       featured: true,
-      image: "/sewer-drain-cleaning-machine.webp"
+      image: "/Untitled Project.webp"
     },
     {
       icon: <Wrench className="w-8 h-8" />,

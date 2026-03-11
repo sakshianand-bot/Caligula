@@ -15,11 +15,11 @@ const ContactCTA = memo(function ContactCTA() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a 
-            href="tel:+1234567890" 
+            href="tel:8888168002" 
             className="inline-flex items-center gap-3 bg-slate-900 text-white px-8 py-4 font-medium hover:bg-slate-800 transition-colors"
           >
             <Phone className="w-5 h-5" />
-            (123) 456-7890
+            888-816-8002
           </a>
           <a 
             href="#services" 

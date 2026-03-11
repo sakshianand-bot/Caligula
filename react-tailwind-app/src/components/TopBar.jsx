@@ -15,9 +15,9 @@ const TopBar = memo(function TopBar() {
             Serving Your Local Area
           </span>
         </div>
-        <a href="tel:+1234567890" className="flex items-center gap-2 font-medium text-white hover:text-slate-300 transition-colors">
+        <a href="tel:8888168002" className="flex items-center gap-2 font-medium text-white hover:text-slate-300 transition-colors">
           <Phone className="w-4 h-4" />
-          (123) 456-7890
+          888-816-8002
         </a>
       </div>
     </div>

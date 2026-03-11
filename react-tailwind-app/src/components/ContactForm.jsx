@@ -81,7 +81,7 @@ const ContactForm = memo(function ContactForm() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-white mb-1">Phone</h3>
-                  <p className="text-slate-300">(123) 456-7890</p>
+                  <p className="text-slate-300">888-816-8002</p>
                   <p className="text-sm text-slate-400 mt-1">24/7 Emergency Service</p>
                 </div>
               </div>
@@ -92,7 +92,7 @@ const ContactForm = memo(function ContactForm() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-white mb-1">Email</h3>
-                  <p className="text-slate-300">info@drainexperts.com</p>
+                  <p className="text-slate-300">caligula@caligulasdrainsewer.com</p>
                   <p className="text-sm text-slate-400 mt-1">Quick response guaranteed</p>
                 </div>
               </div>

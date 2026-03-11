@@ -39,7 +39,7 @@ const Footer = memo(function Footer() {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>(123) 456-7890</span>
+                <span>888-816-8002</span>
               </li>
               <li className="flex items-start gap-3">
                 <Clock className="w-4 h-4 mt-0.5 flex-shrink-0" />
